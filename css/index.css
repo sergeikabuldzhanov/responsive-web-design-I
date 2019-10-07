@@ -75,8 +75,8 @@ body{
 
 .navbar {
 	width: 875px;
-	position: fixed; 
-	top: 0;
+	/* position: fixed; 
+	top: 0; */
 	background-color: rgba(255, 255, 255);
 	border-bottom: 1px solid black;
 	display: flex;
@@ -102,7 +102,7 @@ header nav{
 
 @media(max-width:800px){
     header nav{
-        width: 100%;
+        width: 95%;
         margin-top: 20px;
     }
 }
@@ -117,7 +117,10 @@ nav a{
 
 @media(max-width:800px){
     nav a{
+        width: 15%;
         margin: unset;
+        padding: unset;
+        text-align: center;
     }
 }
 
@@ -131,6 +134,7 @@ nav a:last-child{
 
 @media(max-width: 500px){
     .navbar{
+        width: 100%;
         position: unset;
         border: none;
     }
@@ -187,6 +191,7 @@ nav a:hover{
           align-items: center;
           position: relative;
           right: 15px;
+          margin: 0;
       }
   }
 
@@ -212,6 +217,8 @@ nav a:hover{
         flex-flow: column wrap;
         align-items: center;
         padding-bottom: 75px;
+        padding-top: 60px;
+        margin-top: 0px;
     }
     .titleButton button{
         margin: unset;
@@ -331,6 +338,9 @@ section{
         width: 28%;
         margin: 30px 20px 30px 0;
     }
+    .middle-img{
+        width: 100%;
+    }
 }
 
 @media(max-width: 500px){
@@ -340,6 +350,7 @@ section{
         line-height: 1.1;
     }
     .middle-img{
+        width: 100%;
         margin: 30px 0 0px 0;
     }
 }
